@@ -5,9 +5,7 @@ pragma solidity ^0.8.20;
 /// @author
 /// @notice Управляет игровыми турнирами, участниками и выплатами
 contract Tournament {
-    // ----------------------------- //
-    //           STRUCTS             //
-    // ----------------------------- //
+
 
     struct Player {
         address wallet;
@@ -25,25 +23,19 @@ contract Tournament {
         uint256 playerCount;
     }
 
-    // ----------------------------- //
-    //           STORAGE             //
-    // ----------------------------- //
+
 
     TournamentInfo public info;
     mapping(address => Player) public players;
     address[] public playerList;
 
-    // ----------------------------- //
-    //           EVENTS              //
-    // ----------------------------- //
+
 
     event TournamentCreated(string name, uint256 entryFee, address indexed creator);
     event PlayerRegistered(address indexed player);
     event TournamentEnded(address indexed winner, uint256 prize);
 
-    // ----------------------------- //
-    //          CONSTRUCTOR          //
-    // ----------------------------- //
+
 
     constructor(string memory _name, uint256 _entryFee) {
         info = TournamentInfo({
@@ -59,9 +51,6 @@ contract Tournament {
         emit TournamentCreated(_name, _entryFee, msg.sender);
     }
 
-    // ----------------------------- //
-    //           MODIFIERS           //
-    // ----------------------------- //
 
     modifier onlyCreator() {
         require(msg.sender == info.creator, "Only creator");
@@ -73,9 +62,6 @@ contract Tournament {
         _;
     }
 
-    // ----------------------------- //
-    //         MAIN LOGIC            //
-    // ----------------------------- //
 
     /// @notice Зарегистрироваться в турнире, отправив entryFee
     function register() external payable isActiveTournament {
@@ -118,9 +104,6 @@ contract Tournament {
         emit TournamentEnded(winner, prize);
     }
 
-    // ----------------------------- //
-    //         VIEW FUNCTIONS        //
-    // ----------------------------- //
 
     function getPlayers() external view returns (address[] memory) {
         return playerList;
@@ -151,3 +134,4 @@ contract Tournament {
         );
     }
 }
+
