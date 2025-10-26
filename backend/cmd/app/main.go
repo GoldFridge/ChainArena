@@ -8,7 +8,12 @@ import (
 )
 
 func main() {
-	services.TournamentDeploy()
+	services.TournamentDeploy("smartcontracts/TournamentInstance.json")
+	services.TournamentDeploy("smartcontracts/TournamentFactory.json")
+	services.TournamentDeploy("smartcontracts/ItemVault.json")
+	services.TournamentDeploy("smartcontracts/WrappedItemToken.json")
+	services.TournamentDeploy("smartcontracts/InventoryManager.json")
+
 	http.HandleFunc("/tournament/create", handlers.CreateTournamentHandler)
 	http.HandleFunc("/tournament/join", handlers.JoinTournamentHandler)
 	http.HandleFunc("/login", handlers.LoginHandler)

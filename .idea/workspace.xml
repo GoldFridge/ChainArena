@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f07fd181-620f-4680-be50-53cd912a9f38" name="Changes" comment="Added login handle and contract deploy" />
+    <list default="true" id="f07fd181-620f-4680-be50-53cd912a9f38" name="Changes" comment="Added login handle and contract deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/cmd/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/cmd/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/internal/handlers/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/internal/handlers/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/internal/services/contract.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend/internal/services/contract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/InventoryManager.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/InventoryManager.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/ItemVault.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/ItemVault.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/Tournament.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/Tournament.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/TournamentFactory.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/TournamentFactory.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/TournamentInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/TournamentInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/WrappedItemToken.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/WrappedItemToken.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/invetoryManager.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/invetoryManager.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/itemVault.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/itemVault.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/tournament.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/tournament.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/tournamentInstance.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/tournamentInstance.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/tournametFactory.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/tournametFactory.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartcontracts/wrappedItemToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/backend/smartcontracts/wrappedItemToken.sol" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,10 +44,10 @@
     &quot;accountId&quot;: &quot;96262cee-ab57-46eb-ab81-ed371a8dbfdf&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -41,12 +59,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Go Build.go build GuildVault/cmd/app (1).executor": "Run",
     "Go Build.go build GuildVault/cmd/app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "ignore.virus.scanning.warn.message": "true",
@@ -59,18 +79,33 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vladb\GolandProjects\ChainArena1\backend" />
       <recent name="C:\Users\vladb\GolandProjects\ChainArena\backend\internal\services" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build GuildVault/cmd/app (1)">
+    <configuration name="go build GuildVault/cmd/app (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="ChainArena1" />
+      <working_directory value="$PROJECT_DIR$/backend" />
+      <kind value="PACKAGE" />
+      <package value="GuildVault/cmd/app" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/backend/cmd/app/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build GuildVault/cmd/app" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
-      <module name="ChainArena" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
+      <kind value="PACKAGE" />
+      <package value="ChainArena1/cmd/app" />
       <directory value="$PROJECT_DIR$/backend/cmd/app" />
       <filePath value="$PROJECT_DIR$/backend/cmd/app" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build GuildVault/cmd/app (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

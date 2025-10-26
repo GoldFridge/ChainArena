@@ -83,7 +83,7 @@ func TestDeploy() {
 
 }
 
-func TournamentDeploy() {
+func TournamentDeploy(path string) {
 	var (
 		PrivateKey        = "641dafd4a1e79eb25051c3c05fd15b7d613bbe636bc447e31cd705d2ad670d12"
 		ZkSyncEraProvider = "https://sepolia.era.zksync.dev"
@@ -108,7 +108,7 @@ func TournamentDeploy() {
 	}
 
 	// Read smart contract bytecode
-	_, bytecode, _, err := GetArtifactData("backend/internal/services/Tournament.json")
+	_, bytecode, _, err := GetArtifactData(path)
 
 	if err != nil {
 		log.Panic(err)
